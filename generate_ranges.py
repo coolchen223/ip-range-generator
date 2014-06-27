@@ -25,7 +25,8 @@ def real_range(subnet, debug):
             elif "ishmael" in name:
                 raise
             else:
-                print "hostname valid!"
+                if debug:
+                    print "hostname valid!"
                 ret.append(i)
         except:
             if debug:
